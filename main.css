@@ -1,0 +1,16 @@
+.breathHead {
+    display: flex;
+    justify-content: center;
+}
+
+.gif {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+* {
+    border: solid .25em blanchedalmond;
+    background-color: blueviolet;
+    
+}
