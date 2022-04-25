@@ -1,12 +1,26 @@
 .breathHead {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    color: darkorchid;
+    padding: 5rem;
+    text-decoration: line-through;
+    animation: reverse; 
+    font-family: 'Babylonica', cursive;
 }
 
 .gif {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 30%;
     
+}
+
+.rightColumn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    font-size: .5%;
 }
 
 * {
