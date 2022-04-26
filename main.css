@@ -37,7 +37,12 @@
 
 .popUpIpad {
     color: red;
-  position:absolute;
+    position: absolute;
+}
+
+input {
+    width: 100%;
+    margin: 15px auto;
 }
 
 input.user,
@@ -63,11 +68,40 @@ textarea {
     border: none;
 }
 
-a {
+.anchor {
     white-space: nowrap;
     background-color: white;
-    border:none;
+    border: none;
     margin-top: 5em;
     cursor: pointer;
 }
 
+#bg-modal {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 75px;
+    align-items: flex-start;
+    top: 0;
+    display: none;
+}
+
+.modal-content {
+    width: 25em;
+    height: 20em;
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+    padding-top: 1em;
+}
+
+.close {
+    position: relative;
+    top: 0;
+    margin-left: 375px;
+    font-size: 30px;
+    curser: pointer;
+}
