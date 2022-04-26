@@ -4,7 +4,7 @@ const gifDatabase = [
         name: "Windmill",
         Url: "https://media1.giphy.com/media/37WZHpaXJRcxa/200w.webp?cid=ecf05e47nlwlmlgcflh6omrmy3ml990a7bhtwg8vscydk52n&rid=200w.webp&ct=g",
         hovertext: "flash exquisite hangar",
-        link: "breath.html"
+        link: "https://www.youtube.com/watch?v=7jY_ZP6gQiQ"
     },
 
     {
@@ -60,7 +60,7 @@ const gifDatabase = [
         name: "Thank you (Rose)",
         Url: "https://media0.giphy.com/media/lrUU99mair7hf75Eb0/200w.webp?cid=ecf05e47da0zg57lz4qm0sigyoil6kqhri8l2xzpb8h737t9&rid=200w.webp&ct=g",
         hovertext: "sticky sugar hearts",
-        link: "https://www.youtube.com/watch?v=7jY_ZP6gQiQ"
+        link: "breath.html"
     },
 
 ]
@@ -70,7 +70,7 @@ export const gifHtmlString = () => {
     let htmlString = ""
     for (const gif of gifDatabase) {
         htmlString += `<div class="gifPics">
-            <a href="https://www.google.com"><img class="gifImage" src= ${gif.Url} alt="Fun Guy">
+            <a href=${gif.link}><img class="gifImage" src= ${gif.Url} alt="Fun Guy">
             </a>
             <div class="content">
             <div class="text">${gif.hovertext}</div>
