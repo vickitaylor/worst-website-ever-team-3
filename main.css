@@ -6,11 +6,68 @@
 .gif {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 * {
     border: solid .25em blanchedalmond;
     background-color: blueviolet;
-    
+
 }
+
+.loginPopUp {
+    background-color: #ffffff;
+    color: grey;
+    width: 10em;
+    padding: 4em;
+    position: absolute;
+    text-decoration: underline;
+    color: red;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 36em;
+}
+
+.popUp {
+    width: 1em;
+    height: 2em;
+}
+
+.popUpIpad {
+    color: red;
+  position:absolute;
+}
+
+input.user,
+textarea {
+    background: gray;
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+input.password,
+textarea {
+    background: grey;
+    border: none;
+    background-color: white;
+}
+
+input.submit,
+textarea {
+    background: red;
+    color: white;
+    background-color: white;
+    border: none;
+}
+
+a {
+    white-space: nowrap;
+    background-color: white;
+    border:none;
+    margin-top: 5em;
+    cursor: pointer;
+}
+
