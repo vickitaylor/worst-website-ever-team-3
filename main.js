@@ -6,3 +6,4 @@ const gifString= gifHtmlString()
 const parentHTMLElement = document.querySelector(".gifContainer")
 
 parentHTMLElement.innerHTML = gifString
+
