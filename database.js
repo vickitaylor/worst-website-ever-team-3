@@ -54,7 +54,7 @@ export const gifHtmlString = () => {
     let htmlString = `<article class= "gifList>`
         for (const gif of gifDatabase) {
             htmlString += `<section class="gifPics">
-            <div><img class="gifImage" src= ${gif.Url} alt="Fun Guy"><a href="https://www.google.com">
+            <div><a href="https://www.google.com"><img class="gifImage" src= ${gif.Url} alt="Fun Guy">
             </a> </div>
             </section>
             `
