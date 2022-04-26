@@ -1,7 +1,8 @@
-import { getGifs } from "./database.js";
+import { gifHtmlString } from "./database.js";
 
-const allGifs = getGifs()
+// const allGifs = getGifs()
+const gifString= gifHtmlString()
 
 const parentHTMLElement = document.querySelector(".gif")
 
-parentHTMLElement.innerHTML = allGifs
+parentHTMLElement.innerHTML = gifString
