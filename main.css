@@ -7,23 +7,21 @@
     color: darkorchid;
     padding: 5rem;
     text-decoration: line-through;
-    animation: reverse; 
     font-family: 'Babylonica', cursive;
+    font-size: xx-large;
 }
 
-.gif {
+.gifContainer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 30%;
+    justify-content: center;
+     
+}
+
+.gifImage {
+    width: 20rem;
     
-}
-
-.rightColumn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    font-size: .5%;
 }
 
 * {
