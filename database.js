@@ -51,14 +51,13 @@ const gifDatabase = [
 
 
 export const gifHtmlString = () => {
-    let htmlString = `<article class= "gifList>`
+    let htmlString = ""
         for (const gif of gifDatabase) {
-            htmlString += `<section class="gifPics">
-            <div><a href="https://www.google.com"><img class="gifImage" src= ${gif.Url} alt="Fun Guy">
-            </a> </div>
-            </section>
-            `
+            htmlString += `<div class="gifPics">
+            <a href="https://www.google.com"><img class="gifImage" src= ${gif.Url} alt="Fun Guy">
+            </a> </div>`
         }
+        
         return htmlString
 }
 
