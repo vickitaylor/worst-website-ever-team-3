@@ -1,12 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Comic+Neue:wght@700&display=swap');
+
 .breathHead {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    color:rgba(27, 240, 38, 0.918);
+    padding: 5rem;
+    text-decoration: line-through;
+    font-family: 'Babylonica', cursive;
+    font-size: xx-large;
 }
 
-.gif {
+.gifContainer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
+    justify-content: space-between;
+    
+}
+
+.animatedIntensifies {
+    text-decoration: overline;
+    font-family: 'Babylonica', cursive;
+    font-size: xx-large;
+    color:rgba(27, 240, 38, 0.918);
+    padding: .5em;
+}
+
+.blowScreen {
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    text-decoration: line-through;
+    color:rgba(27, 240, 38, 0.918);
+    padding: .5em;
+}
+
+.alphabet {
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    text-decoration: line-through;
+    color:rgba(27, 240, 38, 0.918);
+    padding: .5em;
+}
+
+.gifPics {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.gifImage {
+    width: 20rem;
 }
 
 * {
@@ -105,3 +151,46 @@ textarea {
     font-size: 30px;
     curser: pointer;
 }
+    
+
+
+
+/* css for hovertext */
+
+  .content {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #1c87c9;
+    background-color: rgba(27, 240, 38, 0.918);
+    width: 300px;
+    height: 300px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+  }
+  
+  .gifPics .content:hover {
+    opacity: 5;
+  }
+  
+  .gifPics .content .text {
+    /* height: 0; */
+    opacity: 5;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+  .gifPics .content:hover .text {
+    opacity: 1;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px);
+  }
