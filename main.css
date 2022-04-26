@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Comic+Neue:wght@700&display=swap');
 
 .breathHead {
     display: flex;
     justify-content: right;
-    color: darkorchid;
+    color:rgba(27, 240, 38, 0.918);
     padding: 5rem;
     text-decoration: line-through;
     font-family: 'Babylonica', cursive;
@@ -15,9 +16,34 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     
 }
+
+.animatedIntensifies {
+    text-decoration: overline;
+    font-family: 'Babylonica', cursive;
+    font-size: xx-large;
+    color:rgba(27, 240, 38, 0.918);
+    padding: .5em;
+}
+
+.blowScreen {
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    text-decoration: line-through;
+    color:rgba(27, 240, 38, 0.918);
+    padding: .5em;
+}
+
+.alphabet {
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    text-decoration: line-through;
+    color:rgba(27, 240, 38, 0.918);
+    padding: .5em;
+}
+
 .gifPics {
     position: relative;
     cursor: pointer;
