@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+
+
 .breathHead {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    color: darkorchid;
+    padding: 5rem;
+    text-decoration: line-through;
+    animation: reverse; 
+    font-family: 'Babylonica', cursive;
 }
 
 .gif {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 30%;
     
+}
+
+.rightColumn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    font-size: .5%;
 }
 
 * {
@@ -14,25 +31,3 @@
     background-color: blueviolet;
     
 }
-
-/* CSS for hover text */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: rgb(80, 207, 55);
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-

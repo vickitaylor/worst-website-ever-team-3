@@ -1,5 +1,4 @@
-const gifdatabase = {
-    gifs:[
+const gifDatabase = [
         {   id: 1,
             name: "Windmill", 
             Url: "https://media1.giphy.com/media/37WZHpaXJRcxa/200w.webp?cid=ecf05e47nlwlmlgcflh6omrmy3ml990a7bhtwg8vscydk52n&rid=200w.webp&ct=g",
@@ -49,4 +48,22 @@ const gifdatabase = {
         },
 
 ]
+
+
+export const gifHtmlString = () => {
+    let htmlString = `<article class= "gifList>`
+        for (const gif of gifDatabase) {
+            htmlString += `<section class="gifPics">
+            <div><img class="gifImage" src= ${gif.Url} alt="Fun Guy"><a href="https://www.google.com">
+            </a> </div>
+            </section>
+            `
+        }
+        return htmlString
+}
+
+
+
+export const getGifs = () => {
+    return gifDatabase.gifs.map(gif => ({ ...gif }))
 }
