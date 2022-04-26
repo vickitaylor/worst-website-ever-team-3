@@ -1,4 +1,4 @@
-const gifdatabase = {
+const gifDatabase = {
     gifs:[
         {   id: 1,
             name: "Windmill", 
@@ -50,3 +50,8 @@ const gifdatabase = {
 
 ]
 }
+
+export const getGifs = () => {
+    return gifDatabase.gifs.map(gif => ({ ...gif }))
+}
+
