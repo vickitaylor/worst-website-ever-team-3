@@ -5,11 +5,12 @@
 .breathHead {
     display: flex;
     justify-content: right;
-    color:rgba(27, 240, 38, 0.918);
+    color: black;
     padding: 5rem;
     text-decoration: line-through;
     font-family: 'Babylonica', cursive;
-    font-size: xx-large;
+    font-size: 4cm;
+    font-weight: bolder;
 }
 
 .gifContainer {
@@ -57,8 +58,12 @@
 
 * {
     border: solid .25em blanchedalmond;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 
+}
+
+.breathBody {
+        background-color: blueviolet;
 }
 
 .loginPopUp {
@@ -153,9 +158,17 @@ textarea {
     top: 0;
     margin-left: 375px;
     font-size: 30px;
-    curser: pointer;
+    cursor: pointer;
 }
     
+
+
+#helpLink {
+    text-align: right;
+    color: black;
+    font-size: larger;
+}
+
 
 
 
